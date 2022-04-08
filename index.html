@@ -6,13 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./myscripts.js" defer></script> 
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 
-    <button id="btnRock">Rock</button>
-    <button id="btnPaper">Paper</button>
-    <button id="btnScissors">Scissors</button>
+    <div class = 'buttons'>
+        <button id="btnRock">Rock</button>
+        <button id="btnPaper">Paper</button>
+        <button id="btnScissors">Scissors</button>
+    </div>
+    
+    <div id="result">  
+        <div class = 'scoreHolder'>  
+            <h1>Number of played rounds:</h1>
+            <div id="counter"> </div>
+        </div>
+        <div class = 'scoreHolder'>
+            <h1>Current computer score:</h1>
+            <div id="computerScorer"> </div>
+        </div>
+        <div class = 'scoreHolder'> 
+            <h1>Current player score:</h1>
+            <div id="playerScorer"></div>
+        </div>
+    </div>
 
-<div id="result"></div>
+    <div id = 'thisRound'></div>
+
+    <button id="reset">RESET</button>
+
+</body>
 
 </html>
