@@ -62,7 +62,7 @@ function calculatingResult(roundResult) {
             var thisRoundScore = 'After 5 rounds It`a tie';
         }
         document.getElementById("thisRound").innerHTML = thisRoundScore
-
+        alert('you`ve player for 5 rounds. Check the final score and reset the game if you want to play again!')
     }
 
 }

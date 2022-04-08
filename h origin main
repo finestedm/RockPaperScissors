@@ -1,0 +1,29 @@
+[33mcommit 3ceb842f875c27a7ab557191276675124ba299a0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: pawel <finestedm@gmail.com>
+Date:   Fri Apr 8 23:05:18 2022 +0200
+
+    working version with a bit of styling and additional features missing
+
+[33mcommit 31ddb5a4569ee1896debdb651bf54aa8b7e51255[m
+Author: pawel <finestedm@gmail.com>
+Date:   Thu Apr 7 23:05:42 2022 +0200
+
+    stuck at trying to count the score
+
+[33mcommit 4706f6184e2222e21b3de555f9b87584eff43161[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pawel <finestedm@gmail.com>
+Date:   Mon Mar 14 21:33:28 2022 +0100
+
+    working built
+
+[33mcommit 49019f601f0fa3d61c84e092d6bc1f01de90ff46[m
+Author: pawel <finestedm@gmail.com>
+Date:   Mon Mar 14 21:15:59 2022 +0100
+
+    first commit. Just in case
+
+[33mcommit 42e36ee94898b334b2d2479f9213f55a75fee10a[m
+Author: finestedm <85036437+finestedm@users.noreply.github.com>
+Date:   Sun Mar 13 21:54:50 2022 +0100
+
+    Initial commit
