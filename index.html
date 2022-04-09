@@ -10,30 +10,41 @@
 </head>
 <body>
 
+    <div class="splash"> 
+        <div class = 'fade-in'>WELCOME! LET'S PLAY A GAME OF ROCK, PAPER, SCISSORS! </div>
+    </div>
+
+    <h1> Choose Rock, Paper or Scissors</h1>
     <div class = 'buttons'>
         <button id="btnRock">Rock</button>
         <button id="btnPaper">Paper</button>
         <button id="btnScissors">Scissors</button>
     </div>
+    <div id = 'thisRound'> Start by pressing an icon above</div>
+
     
-    <div id="result">  
+    <div id="result">
         <div class = 'scoreHolder'>  
-            <h1>Number of played rounds:</h1>
-            <div id="counter"> </div>
+            <span>Number of played rounds:</span>
+            <div id="counter">0</div>
         </div>
-        <div class = 'scoreHolder'>
-            <h1>Current computer score:</h1>
-            <div id="computerScorer"> </div>
-        </div>
-        <div class = 'scoreHolder'> 
-            <h1>Current player score:</h1>
-            <div id="playerScorer"></div>
+        <div id = "bottom">
+            <div class = 'scoreHolder'>
+                <img src="./images/robot.svg">
+                <span>Current computer score:</span>
+                <div id="computerScorer">0</div>
+            </div>
+
+            <div class = 'scoreHolder'> 
+                <img src="./images/player.svg">
+                <span>Current player score:</span>
+                <div id="playerScorer">0</div>
+            </div>
         </div>
     </div>
 
-    <div id = 'thisRound'></div>
 
-    <button id="reset">RESET</button>
+    <button id="reset">RESET ⭯</button>
 
 </body>
 

@@ -3,8 +3,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: #3F3F3F;
+    background-color: #B2CEDE;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #408292;
+
 }
 
 .buttons {
@@ -15,7 +23,8 @@ body {
     width:100vw;
     height:auto;
     gap: 5%;
-
+    background-color: #B2CEDE;
+    padding: 25px 0px;
 }
 
 .buttons button {
@@ -27,7 +36,21 @@ body {
     gap: 50rem;
     border: 0px solid rgba(0, 0, 0, 0);
     color:rgba(0, 0, 0, 0);
+    transition: all 0.1s;
+    border-radius: 100%;
 }
+
+.buttons button:hover {
+    background-color: #ffffff62;
+    scale: 1.02
+}
+
+
+.buttons button:active {
+    background-color: #ea5a47;
+    scale: 0.95
+}
+
 
 #btnRock {
     background-image: url(./images/rock.svg);   
@@ -45,10 +68,22 @@ body {
     max-width: 70rem;
     width:100vw;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 2px solid #408292;
+    padding: 1rem;
+}
+
+#bottom {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+#thisRound {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
 .scoreHolder {
     display: flex;
@@ -57,13 +92,79 @@ body {
     text-align: center;
 }
 
+.scoreHolder img {
+    height: 100px;
+}
 
-h1 {
+.scoreHolder div {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+span {
     font-size: 1rem;
 }
 
-#thisRound {
-    position: absolute;
-    top: 1rem;
 
+
+#reset {
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    border: 2px solid #EA5A47;
+    color: #282f33;
+    background-color: #ea5a4752;
+    border-radius: 1rem;
+    transition: all 0.1s;
+
+}
+
+#reset:hover {
+    background-color: #EA5A47;
+}
+
+#reset:active {
+    color: #B2CEDE;
+}
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    background-color: #B2CEDE;
+    color: #282f33;
+    text-align: center;
+    line-height: 90vh;
+    font-size: x-large;
+}
+
+.splash.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -200;
+    background-color: #B2CEDE;
+    color: #282f33;
+    text-align: center;
+    line-height: 90vh;
+    font-size: x-large;
+    transition: all 1s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
 }
